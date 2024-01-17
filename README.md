@@ -8,7 +8,6 @@ Cette application utilise une variété de technologies modernes pour fournir un
 
 - **React** : Une bibliothèque JavaScript pour la construction d'interfaces utilisateur interactives.
 - **Node.js** : Une plateforme d'exécution JavaScript côté serveur pour construire des applications réseau évolutives.
-- **Docker** : Une plateforme pour automatiser le déploiement, la mise à l'échelle et la gestion des applications conteneurisées.
 - **Vite.js** : Un outil de construction qui vise à fournir un environnement de développement plus rapide et plus efficace.
 - **Let's Encrypt** : Un service de certification automatisé et gratuit pour fournir une connexion HTTPS sécurisée.
 
