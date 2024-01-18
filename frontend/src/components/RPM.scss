@@ -1,0 +1,51 @@
+@import "../commons.scss";
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .frame {
+    width: 100vw;
+    height: 100vh;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      Segoe UI,
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      Fira Sans,
+      Droid Sans,
+      Helvetica Neue,
+      sans-serif;
+    font-size: 14px;
+    border: solid 5px black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+}
+
+.img-download-block {
+  padding-bottom: 50px;
+}
+
+body {
+  background-color: black;
+}
+
+.avatar-image {
+  width: 26%;
+  border: 1px solid white;
+  position: absolute;
+  left: 0;
+  margin-bottom: 1rem;
+  transform: translateY(150%);
+  @media (max-width: 600px) {
+    width: 45%;
+    transform: translateY(250%);
+  }
+}
