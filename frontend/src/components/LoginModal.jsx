@@ -38,7 +38,6 @@ function LoginModal() {
     const { name, value } = event.target;
     setLoginInfo({ ...loginInfo, [name]: value });
   };
-  console.info(loginInfo);
 
   const handleLogin = (e) => {
     e.preventDefault();

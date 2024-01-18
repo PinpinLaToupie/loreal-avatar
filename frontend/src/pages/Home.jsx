@@ -22,11 +22,14 @@ function Home() {
       <h2 className="main-title">L'ORÉAL AVATAR</h2>
       <input
         type="button"
-        value="Créer un compte"
+        value="Créer un avatar"
         onClick={openLoginModal}
         className="button-center"
       />
       {showAvatar && <LoginModal key={modalKey} />}
+      <div className="footer">
+        <p>L'ORÉAL AVATAR un site de L'ORÉAL Paris </p>
+      </div>
     </div>
   );
 }
