@@ -2,6 +2,8 @@
 /* eslint-disable no-shadow */
 import { useEffect, useState } from "react";
 
+import Voucher from "./Voucher";
+
 import "./RPM.scss";
 import "../commons.scss";
 
@@ -107,14 +109,6 @@ function RPM() {
         title="Ready Player Me Avatar"
       />
       <div className="img-download-block">
-        {avatarUrl && (
-          <img
-            key={avatarUrl}
-            src={avatarUrl}
-            alt="Ready Player Me Avatar"
-            className="avatar-image"
-          />
-        )}
         {avatarUrl ? (
           <button
             type="button"
@@ -127,14 +121,15 @@ function RPM() {
           <span>Attendez la génération de l'image...</span>
         )}
       </div>
-      {avatarUrl ? null : (
+      {avatarUrl && (
         <>
-          <p className="image-text">
-            Cliquez sur le bouton suivant pour générer votre image.
-          </p>
-          <p className="image-text">
-            L'image de votre avatar va apparaître ici
-          </p>
+          <img
+            key={avatarUrl}
+            src={avatarUrl}
+            alt="Ready Player Me Avatar"
+            className="avatar-image"
+          />
+          <Voucher />
         </>
       )}
     </div>

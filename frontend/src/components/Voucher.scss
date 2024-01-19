@@ -3,24 +3,42 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  position: relative;
+  border: solid 5px black;
+  border-radius: 15px;
+  background-color: whitesmoke;
 
-  h1 {
+  .voucher-title {
     font-size: 3rem;
     margin: 1rem;
+    color: black;
+    text-align: center;
   }
-  h2 {
-    margin-top: 1rem;
+  .voucher-subtitle {
     font-size: 1.5rem;
+    color: black;
+    text-align: center;
   }
-  p {
-    margin: 0 1rem 0 1rem;
+  .voucher-text {
+    margin: 0 1rem 0 1.5rem;
+    color: black;
+    text-align: center;
   }
-
-  img {
-    width: 70%;
+  .code {
+    color: black;
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    @media screen and (min-width: 650px) {
+      font-size: 2rem;
+    }
+  }
+  .product-img {
+    width: 50vw;
     height: 100%;
     margin-bottom: 1rem;
+    border-radius: 15px;
 
     @media screen and (min-width: 451px) and (max-width: 961px) {
       width: 50%;
