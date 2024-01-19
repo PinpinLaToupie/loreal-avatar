@@ -38,18 +38,15 @@ body {
 }
 
 .avatar-image {
-  border: 1px solid white;
+  border: 2px solid goldenrod;
   border-radius: 12px;
-  position: absolute;
-  left: 25vw;
+  position: relative;
   width: 50%;
-  top: 125vh;
-  transform: translateY(50%);
+  bottom: 5vh;
+  margin-top: 1rem;
   @media (min-width: 650px) {
-    width: 40%;
-    transform: translateY(15%);
-    margin-left: 5vw;
-    margin-top: 2.5rem;
+    width: 30vw;
+    margin-top: 1rem;
   }
 }
 

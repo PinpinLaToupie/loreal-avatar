@@ -7,7 +7,6 @@
 }
 
 .intro-text {
-  text-align: center;
   margin-top: 0.8rem;
   color: whitesmoke;
   background-color: black;
@@ -17,4 +16,7 @@
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 15px;
+  @media screen and (min-width: 650px) {
+    text-align: center;
+  }
 }
